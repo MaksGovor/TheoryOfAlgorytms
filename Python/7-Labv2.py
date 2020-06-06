@@ -7,7 +7,7 @@ def TravellingSalesman(graph, vertexFlags, currPos, n, count, distance):
         return
 
     for i in range(n): 
-        if (vertexFlags[i] == False and graph[currPos][i]):
+        if (not vertexFlags[i] and graph[currPos][i]):
             vertexFlags[i] = True
             TravellingSalesman(graph, vertexFlags, i, n, count + 1,distance + graph[currPos][i])
             vertexFlags[i] = False
