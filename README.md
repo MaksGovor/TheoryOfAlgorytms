@@ -1,1 +1,1 @@
-# TheoryOfAlgorytms
+# Theory of algorytms
